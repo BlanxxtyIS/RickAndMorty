@@ -8,11 +8,13 @@
 import UIKit
 
 struct CharactersModel {
+    let id: Int
     let image: UIImage
     let name: String
     let status: String
     
-    init(image: UIImage, name: String, status: String) {
+    init(id: Int, image: UIImage, name: String, status: String) {
+        self.id = id
         self.image = image
         self.name = name
         self.status = status

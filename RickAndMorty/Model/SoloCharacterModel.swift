@@ -8,7 +8,7 @@
 import UIKit
 
 struct SoloCharacterModel {
-    
+    let id: Int
     let name: String
     let image: UIImage
     let status: String
@@ -16,7 +16,8 @@ struct SoloCharacterModel {
     let type: String
     let species: Species
     
-    init(name: String, image: UIImage, status: String, gender: Gender, type: String, species: Species) {
+    init(id: Int, name: String, image: UIImage, status: String, gender: Gender, type: String, species: Species) {
+        self.id = id
         self.name = name
         self.image = image
         self.status = status

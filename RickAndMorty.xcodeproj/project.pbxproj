@@ -21,7 +21,7 @@
 		F4FB41672C22A38A00055A9A /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB41662C22A38A00055A9A /* LocationsViewController.swift */; };
 		F4FB41692C22A3CC00055A9A /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB41682C22A3CC00055A9A /* EpisodesViewController.swift */; };
 		F4FB416B2C22A40D00055A9A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB416A2C22A40D00055A9A /* SettingsViewController.swift */; };
-		F4FB416D2C22A60B00055A9A /* LastTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB416C2C22A60A00055A9A /* LastTest.swift */; };
+		F4FB416D2C22A60B00055A9A /* FirebaseTrueAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB416C2C22A60A00055A9A /* FirebaseTrueAnswer.swift */; };
 		F4FB41702C22A97000055A9A /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB416F2C22A97000055A9A /* CustomCollectionViewCell.swift */; };
 		F4FB41722C22BE8600055A9A /* SoloCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB41712C22BE8600055A9A /* SoloCharacterViewController.swift */; };
 		F4FB41742C22BF1B00055A9A /* SoloCharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB41732C22BF1B00055A9A /* SoloCharacterModel.swift */; };
@@ -46,7 +46,7 @@
 		F4FB41662C22A38A00055A9A /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 		F4FB41682C22A3CC00055A9A /* EpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
 		F4FB416A2C22A40D00055A9A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		F4FB416C2C22A60A00055A9A /* LastTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastTest.swift; sourceTree = "<group>"; };
+		F4FB416C2C22A60A00055A9A /* FirebaseTrueAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseTrueAnswer.swift; sourceTree = "<group>"; };
 		F4FB416F2C22A97000055A9A /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		F4FB41712C22BE8600055A9A /* SoloCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloCharacterViewController.swift; sourceTree = "<group>"; };
 		F4FB41732C22BF1B00055A9A /* SoloCharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloCharacterModel.swift; sourceTree = "<group>"; };
@@ -126,6 +126,7 @@
 		F4FB41602C22A11B00055A9A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F4FB416C2C22A60A00055A9A /* FirebaseTrueAnswer.swift */,
 				F4FB41642C22A28F00055A9A /* TabBarViewController.swift */,
 				F4FB41472C22009800055A9A /* CharactersViewController.swift */,
 				F4FB416F2C22A97000055A9A /* CustomCollectionViewCell.swift */,
@@ -151,7 +152,6 @@
 				F4FB41662C22A38A00055A9A /* LocationsViewController.swift */,
 				F4FB41682C22A3CC00055A9A /* EpisodesViewController.swift */,
 				F4FB416A2C22A40D00055A9A /* SettingsViewController.swift */,
-				F4FB416C2C22A60A00055A9A /* LastTest.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -278,7 +278,7 @@
 				F4FB41692C22A3CC00055A9A /* EpisodesViewController.swift in Sources */,
 				F4FB41672C22A38A00055A9A /* LocationsViewController.swift in Sources */,
 				F4FB41722C22BE8600055A9A /* SoloCharacterViewController.swift in Sources */,
-				F4FB416D2C22A60B00055A9A /* LastTest.swift in Sources */,
+				F4FB416D2C22A60B00055A9A /* FirebaseTrueAnswer.swift in Sources */,
 				F4FB41702C22A97000055A9A /* CustomCollectionViewCell.swift in Sources */,
 				F4FB415A2C2208FA00055A9A /* RickAndMortyManager.swift in Sources */,
 				F4FB41742C22BF1B00055A9A /* SoloCharacterModel.swift in Sources */,

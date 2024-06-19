@@ -51,8 +51,6 @@ class RickAndMortyManager {
                         if let model = self.parseJSONSolo(safeData) {
                             self.soloDelegate?.getSoloCharacter(model)
                         }
-                    default:
-                        print("Ошибка")
                     }
                 }
             }
@@ -74,7 +72,8 @@ class RickAndMortyManager {
                 }
                 let name = data.name
                 let status = "Status: \(data.status.rawValue)"
-                let rickAndMortyModel = CharactersModel(image: image, name: name, status: status)
+                let id = data.id
+                let rickAndMortyModel = CharactersModel(id: id, image: image, name: name, status: status)
                 allModel.append(rickAndMortyModel)
             }
             return allModel
@@ -101,7 +100,7 @@ class RickAndMortyManager {
                 let gender = data.gender
                 let type = data.type
                 let species = data.species
-                let soloModel = SoloCharacterModel(name: name, image: image, status: status, gender: gender, type: type, species: species)
+                let soloModel = SoloCharacterModel(id: data.id, name: name, image: image, status: status, gender: gender, type: type, species: species)
                 soloCharacterModel.append(soloModel)
             }
             return soloCharacterModel

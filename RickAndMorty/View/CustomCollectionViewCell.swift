@@ -8,33 +8,31 @@
 import UIKit
 
 class CustomCollectionViewCell: UICollectionViewCell {
-    
+    //MARK: - Public Properties
     static let reuseIdentifier = "CharactersCell"
     
-    lazy var charecterImage: UIImageView = {
+    //MARK: - Private Properties
+    private lazy var charecterImage: UIImageView = {
         let image = UIImage(named: "")
         let imageView = UIImageView(image: image)
         imageView.heightAnchor.constraint(equalToConstant: 200).isActive = true
-        imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
     
-    lazy var characterNameLabel: UILabel = {
+    private lazy var characterNameLabel: UILabel = {
        let label = UILabel()
         label.font = .systemFont(ofSize: 18, weight: .bold)
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
-    lazy var characterStatusLabel: UILabel = {
+    private lazy var characterStatusLabel: UILabel = {
        let label = UILabel()
         label.font = .systemFont(ofSize: 15, weight: .medium)
         label.textColor = .systemGray
-        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
-    lazy var characterBackgroundView: UIView = {
+    private lazy var characterBackgroundView: UIView = {
        let view = UIView()
         view.backgroundColor = .white
         view.layer.borderColor = UIColor.black.cgColor
@@ -49,6 +47,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
         return view
     }()
     
+    //MARK: - Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
@@ -58,11 +57,21 @@ class CustomCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //MARK: - Public Methods
+    func setupCellDatas(image: UIImage, characterName: String, characterStatus: String) {
+        charecterImage.image = image
+        characterNameLabel.text = characterName
+        characterStatusLabel.text = characterStatus
+    }
+    
+    //MARK: - Private Methods
     private func setupUI() {
         contentView.addSubview(characterBackgroundView)
-        characterBackgroundView.addSubview(charecterImage)
-        characterBackgroundView.addSubview(characterNameLabel)
-        characterBackgroundView.addSubview(characterStatusLabel)
+        let uiViews = [charecterImage, characterNameLabel, characterStatusLabel]
+        uiViews.forEach { uiView in
+            uiView.translatesAutoresizingMaskIntoConstraints = false
+            characterBackgroundView.addSubview(uiView)
+        }
 
         NSLayoutConstraint.activate([
             characterBackgroundView.topAnchor.constraint(equalTo: contentView.topAnchor),

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyAbWJ6biQ3efwX7F6qjD_td9Z3hqJnokj0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>543669646046</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>RickAndMorty</string>
+	<key>PROJECT_ID</key>
+	<string>rickandmorty-66407</string>
+	<key>STORAGE_BUCKET</key>
+	<string>rickandmorty-66407.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:543669646046:ios:a45b2cd5d00f7d05ba484f</string>
+</dict>
+</plist>

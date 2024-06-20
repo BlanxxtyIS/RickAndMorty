@@ -101,12 +101,12 @@ class SoloCharacterViewController: UIViewController {
             
             genderCharacter.topAnchor.constraint(equalTo: statusCharacter.bottomAnchor, constant: 30),
             genderCharacter.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+                        
+            speciesCharacter.topAnchor.constraint(equalTo: genderCharacter.bottomAnchor, constant: 30),
+            speciesCharacter.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             
-            typeCharacter.topAnchor.constraint(equalTo: genderCharacter.bottomAnchor, constant: 30),
+            typeCharacter.topAnchor.constraint(equalTo: speciesCharacter.bottomAnchor, constant: 30),
             typeCharacter.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            
-            speciesCharacter.topAnchor.constraint(equalTo: typeCharacter.bottomAnchor, constant: 30),
-            speciesCharacter.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20)
         ])
     }
 }
@@ -120,7 +120,7 @@ extension SoloCharacterViewController: RickAndMortySoloDelegate {
                     self.charecterImage.image = solo.image
                     self.statusCharacter.text = solo.status
                     self.genderCharacter.text = "Gender: \(solo.gender.rawValue)"
-                    self.typeCharacter.text = "\(solo.type)"
+                    self.typeCharacter.text = "Type: \(solo.type)"
                     self.speciesCharacter.text = "Species: \(solo.species.rawValue)"
                     break
                 }
